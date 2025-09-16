@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tech-Shop</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <style>
+      /* Force dark background */
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-color: #0e1111 !important; /* ✅ ensure override */
+        margin: 0;
+      }
+
+      /* Cart Wrapper */
+      .cart-wrapper {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      /* Navbar */
+      .navbar {
+        background-color: #1d2124 !important;
+        padding: 0.25rem 1rem !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .navlogo1 {
+        font-family: "Oswald", sans-serif;
+        font-weight: 700;
+        color: white !important;
+        font-size: 1.8rem !important;
+      }
+
+      .icon-group i {
+        font-size: 1.2rem !important;
+        cursor: pointer;
+        color: white !important;
+        margin-left: 1rem;
+      }
+
+      /* Cart Section */
+      .cart-container {
+        position: relative;
+      }
+      .cart-container .fa-cart-shopping {
+        font-size: 12rem;
+        color: orangered;
+      }
+      .x-mark {
+        position: absolute;
+        top: 31%;
+        left: 58%;
+        transform: translate(-50%, -50%);
+        font-size: 5rem;
+        color: black;
+        cursor: pointer;
+      }
+
+      /* Empty Cart Text */
+      .empty-text {
+        margin-top: 15px;
+        font-size: 1.9rem;
+        color: white; /* ✅ changed to white so it shows on dark bg */
+        text-align: center;
+      }
+
+      /* Button */
+      .btn1 {
+        margin-top: 20px;
+        padding: 12px 24px;
+        background: orangered;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 1rem;
+        text-decoration: none;
+        color: white;
+        transition: 0.3s ease;
+      }
+      .btn1:hover {
+        background: #ff3333;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Cart Wrapper -->
+    <div class="cart-wrapper">
+      <div class="cart-container">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <i class="fa-solid fa-xmark x-mark"></i>
+      </div>
+      <p class="empty-text">Your Cart is Empty</p>
+      <button class="btn1">Start Shopping</button>
+    </div>
+  </body>
+</html>
